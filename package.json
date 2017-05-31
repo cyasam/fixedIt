@@ -1,0 +1,35 @@
+{
+  "name": "fixed-it",
+  "version": "1.0.0",
+  "description": "Fixed elements with scrolling",
+  "main": "dist/main.js",
+  "scripts": {
+    "dev": "gulp dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cyasam/fixedIt.git"
+  },
+  "author": "Cagdas ISIK",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cyasam/fixedIt/issues"
+  },
+  "homepage": "https://github.com/cyasam/fixedIt#readme",
+  "devDependencies": {
+    "browser-sync": "latest",
+    "eslint": "latest",
+    "eslint-config-standard": "latest",
+    "eslint-plugin-promise": "latest",
+    "eslint-plugin-standard": "latest",
+    "gulp": "latest",
+    "gulp-eslint": "latest",
+    "gulp-load-plugins": "latest",
+    "gulp-rename": "latest",
+    "gulp-sourcemaps": "latest",
+    "gulp-uglify": "latest",
+    "gulp-util": "latest",
+    "gulp-watch": "latest",
+    "pump": "latest"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "globals": {
+    "window": true,
+    "location":true,
+    "jQuery": true,
+    "$": true,
+    "__": true,
+    "define": true,
+    "_": true,
+    "navigator": true,
+    "alert": true,
+    "localStorage": true,
+    "document": true,
+    "XMLHttpRequest":true,
+    "google": true,
+    "FB":true,
+    "event":true,
+    "FormData":true
+  }
+}

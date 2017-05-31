@@ -4,7 +4,8 @@
   "description": "Fixed elements with scrolling",
   "main": "dist/main.js",
   "scripts": {
-    "dev": "gulp dev"
+    "dev": "gulp dev --type=dev",
+    "prod": "gulp prod --type=prod"
   },
   "repository": {
     "type": "git",

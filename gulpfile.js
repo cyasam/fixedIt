@@ -6,6 +6,8 @@ var gulp = require('gulp'),
 
 plugins.pump = require('pump');
 
+var envType = plugins.util.env.type;
+
 var pathGlob = {
     src: './src',
     prod: './dist'
@@ -33,10 +35,10 @@ var gulpTasks = {
     jsProcess: function (cb) {
         plugins.pump([
                 gulp.src(path.srcJs + '/**/*.js'),
-                plugins.sourcemaps.init(),
+                (envType === 'dev' ? plugins.sourcemaps.init() : plugins.util.noop()),
                 plugins.rename({suffix: '.min'}),
                 plugins.uglify(),
-                plugins.sourcemaps.write(),
+                (envType === 'dev' ? plugins.sourcemaps.write() : plugins.util.noop()),
                 gulp.dest(path.prodJs)
             ],
             cb
@@ -64,3 +66,4 @@ for(var key in gulpTasks){
 gulp.task('js', ['lint', 'jsProcess']);
 
 gulp.task('dev', ['js', 'watch', 'browserSync']);
+gulp.task('prod', ['js']);
